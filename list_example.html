@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html ng-app>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Test Angular</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/list_example.css">
+
+        <script src="lib/angular-1.0.1.min.js"></script>
+        <script src="js/list_example.js"></script>
+    </head>
+    <body>
+
+		<div class="container" ng-controller="ListController">
+            <div class="row">
+                <div class="page-reader">
+                    <h1>Example List</h1>
+                </div>
+            </div>
+
+            <div class="row">
+                <table id="list" class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Bought?</th>
+                            <th>Product</th>
+                            <th>Quantity</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="item in items" class="bought-{{ item.bought }}">
+                            <td><input type="checkbox" ng-model="item.bought"></td>
+                            <td><strong>{{ item.product }}</strong></td>
+                            <td>{{ item.quantity }}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="row">
+                <form class="form-inline" name="formItem">
+                    <input type="text" ng-model="item.product" placeholder="Product">
+                    <input type="number" ng-model="item.quantity" placeholder="Quantity" class="input-small">
+                    <button class="btn btn-primary" ng-click="addItem()">add item</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
