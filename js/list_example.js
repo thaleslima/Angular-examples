@@ -33,4 +33,11 @@ function ListController ($scope) {
                            bought: false});
         $scope4.itemss.quantity = $scope.item.quantity = '';
     };
+	
+	$scope.addItem3 = function () {
+        $scope1.itemsss.push({product: $scope.item.product,
+                           quantity: $scope.item.quantity,
+                           bought: false});
+        $scope1.itemss.quantity = $scope.item.quantity = '';
+    };
 }
