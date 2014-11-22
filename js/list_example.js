@@ -1,7 +1,7 @@
 function ListController ($scope) {
 	
 	$scope.items = [
-        {product: 'Milk', quantity: 2, bought: false},
+        {product: 'Mil4k', quantity: 2, bought: false},
         {product: 'Beer', quantity: 12, bought: false}
     ];
 
@@ -13,7 +13,7 @@ function ListController ($scope) {
         $scope.item.quantity = $scope.item.quantity = '';
     };
 	
-	$scope.addItem2 = function () {
+	$scope.addItem5 = function () {
         $scope.items2d.push({product: $scope.item.product,
                            quantity: $scope.item.quantity,
                            bought: false});
@@ -28,7 +28,7 @@ function ListController ($scope) {
     };
 
     $scope.addItem3 = function () {
-        $scope3.itemsss.push({product: $scope.item.product,
+        $scope1.itemsss.push({product: $scope.item.product,
                            quantity: $scope.item.quantity,
                            bought: false});
         $scope4.itemss.quantity = $scope.item.quantity = '';
@@ -38,6 +38,6 @@ function ListController ($scope) {
         $scope1.itemsss.push({product: $scope.item.product,
                            quantity: $scope.item.quantity,
                            bought: false});
-        $scope1.itemss.quantity = $scope.item.quantity = '';
+        $scope4.itemss.quantity = $scope.item.quantity = '';
     };
 }
