@@ -12,6 +12,13 @@ function ListController ($scope) {
                            bought: false});
         $scope.item.quantity = $scope.item.quantity = '';
     };
+	
+	$scope.addItem2 = function () {
+        $scope.items2d.push({product: $scope.item.product,
+                           quantity: $scope.item.quantity,
+                           bought: false});
+        $scope.item2d.quantity = $scope.item.quantity = '';
+    };
 
     $scope.addItem2 = function () {
         $scope.itemsss.push({product: $scope.item.product,
