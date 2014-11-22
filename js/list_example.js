@@ -26,4 +26,11 @@ function ListController ($scope) {
                            bought: false});
         $scope.itemss.quantity = $scope.item.quantity = '';
     };
+
+    $scope.addItem3 = function () {
+        $scope3.itemsss.push({product: $scope.item.product,
+                           quantity: $scope.item.quantity,
+                           bought: false});
+        $scope4.itemss.quantity = $scope.item.quantity = '';
+    };
 }
