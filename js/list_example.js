@@ -2,6 +2,7 @@ function ListController ($scope) {
 	
 	$scope.items = [
         {product: 'Mil4k', quantity: 2, bought: false},
+        {product: 'Mil1k', quantity: 2, bought: false},
         {product: 'Beer', quantity: 12, bought: false}
     ];
 
@@ -13,7 +14,7 @@ function ListController ($scope) {
         $scope.item.quantity = $scope.item.quantity = '';
     };
 	
-	$scope.addItem5 = function () {
+	$scope.addItem4 = function () {
         $scope.items2d.push({product: $scope.item.product,
                            quantity: $scope.item.quantity,
                            bought: false});
